@@ -21,7 +21,7 @@ def run_bot(r, comment_replied_to):
                 print( "Breakfast has been found")
                 list = ['I would have gone with you to the end into the very fires of Mordor.',
                         'Not if we hold true to each other.', 'I thought I had wandered into a dream.',
-                        'I will not let the W city fall nor our people fail', 'FOR FRODO!!',
+                        'I will not let the White city fall nor our people fail', 'FOR FRODO!!',
                         'I will not let the White city fall nor our people fail.',
                         'You have my sword', 'You have my sword',
                         'My friends you bow to no one!',
