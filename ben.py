@@ -69,6 +69,18 @@ def run_bot(r, comment_replied_to):
                 with open("comment_replied_to.txt", "a") as f:
                     f.write(comment.id + "\n")
             print("sleeping for 10 seconds")
+def run_bot(r, comment_replied_to):
+    for comment in r.subreddit('lotrmemes').comments(limit=25):
+        for keyword in keywords:
+            if "!Aragorn-bot" in comment.body and comment.id not in comment_replied_to and not comment.author == r.user.me:
+                print( "Breakfast has been found")
+                comment.reply("You've already had it")
+                comment_replied_to.append(comment.id)
+
+                with open("comment_replied_to.txt", "a") as f:
+                    f.write(comment.id + "\n")
+            print("sleeping for 10 seconds")
+
 def get_saved_comments():
     if not os.path.isfile("comment_replied_to.txt"):
         comment_replied_to = []
