@@ -61,7 +61,11 @@ def run_bot(r, comment_replied_to):
                         'Open war is upon you whether you would risk it or not.',
                         'Farmers, ferriers, stable boys. These are no soldiers.',
                         ' It is an army bred for a single purpose, to destroy the world of men. They will be here by nightfall.',
-                        'They were once men. Great kings of men. Then Sauron the Deceiver gave to them nine rings of power. Blinded by their greed, they took them without question, one by one falling into darkness. Now they are slaves to his will. They are the Nazgul, ringwraiths, neither living nor dead. At all times they feel the presence of the Ring, drawn to the power of the one. They will never stop hunting you.']
+                        'They were once men. Great kings of men. Then Sauron the Deceiver gave to them nine rings of power. Blinded by their greed, they took them without question, one by one falling into darkness. Now they are slaves to his will. They are the Nazgul, ringwraiths, neither living nor dead. At all times they feel the presence of the Ring, drawn to the power of the one. They will never stop hunting you.' , 
+                       'You said you"d bind yourself to me, forsaking the immortal life of your people.' , ' Are you frightened?' , 'I have seen the White City, long ago' , 'Frodos fate is no longer in our hands.' , 'A little more caution from you; that is no trinket you carry' , 'Indeed. I can avoid being seen if I wish, but to disappear entirely, that is a rare gift.' , 'You cannot wield it. None of us can. The One Ring answers to Sauron alone. It has no other master.' , 'The same blood flows in my veins. The same weakness.' , 'I let Frodo go.' , ' By nightfall these hills will be swarming with orcs!... We must reach the woods of Lothlórien.' , 
+                       'Boromir! Give the Ring to Frodo.' , 'They will look for his coming from the White Tower. But he will not return.' , 'Sam, do you know the Athelas plant?' , ' I will not lead the Ring within a hundred leagues of your city.' , '  You should be dead. That spear would have skewered a wild boar.' , 'He is passing into the Shadow World. He"ll soon become a wraith like them.' , 'Frodo, I have lived most of my life surrounded by my enemies. I will be grateful to die among my friends.' , 'Why have you come?' , 'Not for ourselves. But we can give Frodo his chance if we keep Sauron"s Eye fixed upon us. Keep him blind to all else that moves.' , 
+                       'You shall not enter the realm of Gondor.' , 'I do not believe it! I will not!' , 'I summon you to fulfill your oath.' , ' It has been remade... Fight for us... and regain your honor.' , 'What does your heart tell you?' , 'They have a better chance defending themselves here than at Edoras...' , 'Then what do you fear, My Lady?' , 'He"s not alone. Sam went with him.' , 'Not a word.' , 'All Isengard is emptied.' , 'Ten thousand strong at least.' , 'It is an army bred for a single purpose, to destroy the world of men. They will be here by nightfall.' , 'They will look for his coming from the White Tower. But he will not return.' ,
+                       ' Indeed. I can avoid being seen if I wish, but to disappear entirely, that is a rare gift.']
                 random_item = random.choice(list)
                 comment.reply(random_item)
                 comment_replied_to.append(comment.id)
@@ -83,3 +87,4 @@ r = bot_login()
 comment_replied_to = get_saved_comments()
 while True:
     run_bot(r, comment_replied_to)
+ 
